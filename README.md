@@ -1,6 +1,6 @@
 # React + Vite
 
-This project is built using supabase for backend & react query for managing remote state
+This project is built using supabase as backend database & react query for managing remote state
 
 Currently, two official plugins are available:
 
