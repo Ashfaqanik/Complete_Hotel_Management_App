@@ -3,7 +3,6 @@ import Button from "../../ui/Button";
 import Form from "../../ui/Form";
 import FormRow from "../../ui/FormRow";
 import Input from "../../ui/Input";
-
 import { useUpdateUser } from "./useUpdateUser";
 
 function UpdatePasswordForm() {
@@ -13,7 +12,12 @@ function UpdatePasswordForm() {
   const { updateUser, isUpdating } = useUpdateUser();
 
   function onSubmit({ password }) {
-    updateUser({ password }, { onSuccess: reset });
+    updateUser({ password }, { onSuccess: () => reset() });
+  }
+
+  function handleReset(e) {
+    // e.preventDefault();
+    reset();
   }
 
   return (
@@ -25,6 +29,7 @@ function UpdatePasswordForm() {
         <Input
           type="password"
           id="password"
+          // this makes the form better for password managers
           autoComplete="current-password"
           disabled={isUpdating}
           {...register("password", {
@@ -54,7 +59,7 @@ function UpdatePasswordForm() {
         />
       </FormRow>
       <FormRow>
-        <Button onClick={reset} type="reset" variation="secondary">
+        <Button onClick={handleReset} type="reset" variation="secondary">
           Cancel
         </Button>
         <Button disabled={isUpdating}>Update password</Button>
