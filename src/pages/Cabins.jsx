@@ -9,12 +9,26 @@ function Cabins() {
     <>
       <Row type="horizontal">
         <Heading as="h1">All cabins</Heading>
-        <CabinTableOperations />
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <AddCabin />
+        </div>
       </Row>
 
       <Row>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "flex-end",
+          }}
+        >
+          <CabinTableOperations />
+        </div>
         <CabinTable />
-        <AddCabin />
       </Row>
     </>
   );
