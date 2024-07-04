@@ -75,42 +75,42 @@ const startDataDark = [
   {
     duration: "1 night",
     value: 0,
-    color: "#b91c1c",
+    color: "#25ab6d",
   },
   {
     duration: "2 nights",
     value: 0,
-    color: "#c2410c",
+    color: "#c2790c",
   },
   {
     duration: "3 nights",
     value: 0,
-    color: "#a16207",
+    color: "#0794a1",
   },
   {
     duration: "4-5 nights",
     value: 0,
-    color: "#4d7c0f",
+    color: "#4d0f7c",
   },
   {
     duration: "6-7 nights",
     value: 0,
-    color: "#15803d",
+    color: "#728015",
   },
   {
     duration: "8-14 nights",
     value: 0,
-    color: "#0f766e",
+    color: "#5d42a8",
   },
   {
     duration: "15-21 nights",
     value: 0,
-    color: "#1d4ed8",
+    color: "#39746a",
   },
   {
     duration: "21+ nights",
     value: 0,
-    color: "#7e22ce",
+    color: "#633b87",
   },
 ];
 

@@ -3,7 +3,7 @@ import { useRecentStays } from "./useRecentStays";
 import { useRecentBookings } from "./useRecentBookings";
 import Spinner from "../../ui/Spinner";
 import Stats from "./Stats";
-import { useCabins } from "../cabins/useCabins";
+import { useCabins } from "../rooms/useRooms";
 import SalesChart from "./SalesChart";
 import DurationChart from "./DurationChart";
 import TodayActivity from "../check-in-out/TodayActivity";

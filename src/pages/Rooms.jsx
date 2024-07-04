@@ -1,14 +1,14 @@
-import CabinTable from "../features/cabins/CabinTable";
+import CabinTable from "../features/rooms/RoomTable";
 import Heading from "../ui/Heading";
 import Row from "../ui/Row";
-import AddCabin from "../features/cabins/AddCabin";
-import CabinTableOperations from "../features/cabins/CabinTableOperations";
+import AddCabin from "../features/rooms/AddRoom";
+import CabinTableOperations from "../features/rooms/RoomTableOperations";
 
 function Cabins() {
   return (
     <>
       <Row type="horizontal">
-        <Heading as="h1">All cabins</Heading>
+        <Heading as="h1">Rooms</Heading>
         <div
           style={{
             display: "flex",

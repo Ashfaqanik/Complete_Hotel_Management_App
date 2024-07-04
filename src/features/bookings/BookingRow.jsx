@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { format, isToday } from "date-fns";
+import { useDarkMode } from "../../context/DarkModeContext";
+
 import {
   HiArrowDownOnSquare,
   HiArrowUpOnSquare,
@@ -63,12 +65,19 @@ function BookingRow({
   const navigate = useNavigate();
   const { checkout, isCheckingOut } = useCheckout();
   const { deleteBooking, isDeleting } = useDeleteBooking();
+  const { isDarkMode } = useDarkMode();
 
-  const statusToTagName = {
-    unconfirmed: "blue",
-    "checked-in": "green",
-    "checked-out": "silver",
-  };
+  const statusToTagName = isDarkMode
+    ? {
+        unconfirmed: "blue-100",
+        "checked-in": "green-100",
+        "checked-out": "yellow-100",
+      }
+    : {
+        unconfirmed: "blue-700",
+        "checked-in": "green-700",
+        "checked-out": "yellow-700",
+      };
 
   return (
     <Table.Row>

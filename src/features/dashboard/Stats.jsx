@@ -4,6 +4,8 @@ import {
   HiOutlineCalendarDays,
   HiOutlineChartBar,
 } from "react-icons/hi2";
+import { SlBag } from "react-icons/sl";
+
 import Stat from "./Stat";
 import { formatCurrency } from "../../utils/helpers";
 
@@ -27,25 +29,25 @@ function Stats({ bookings, confirmedStays, numDays, cabinCount }) {
     <>
       <Stat
         title="Bookings"
-        color="blue"
-        icon={<HiOutlineBriefcase />}
+        color="indigo"
+        icon={<SlBag />}
         value={numBookings}
       />
       <Stat
         title="Sales"
-        color="green"
+        color="silver"
         icon={<HiOutlineBanknotes />}
         value={formatCurrency(sales)}
       />
       <Stat
         title="Check ins"
-        color="indigo"
+        color="blue"
         icon={<HiOutlineCalendarDays />}
         value={checkins}
       />
       <Stat
         title="Occupancy rate"
-        color="yellow"
+        color="grey"
         icon={<HiOutlineChartBar />}
         value={Math.round(occupation * 100) + "%"}
       />

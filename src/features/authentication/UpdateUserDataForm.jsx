@@ -52,6 +52,7 @@ function UpdateUserDataForm() {
           value={fullName}
           onChange={(e) => setFullName(e.target.value)}
           disabled={isUpdating}
+          defaultValue={fullName}
           id="fullName"
         />
       </FormRow>

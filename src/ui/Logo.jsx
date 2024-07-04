@@ -6,8 +6,12 @@ const StyledLogo = styled.div`
 `;
 
 const Img = styled.img`
-  height: 9.6rem;
+  height: 8.6rem;
   width: auto;
+`;
+const ImgText = styled.div`
+  height: 3rem;
+  font-size: 14px;
 `;
 
 function Logo() {
@@ -18,6 +22,7 @@ function Logo() {
   return (
     <StyledLogo>
       <Img src={src} alt="Logo" />
+      <ImgText>Hotel Radisson</ImgText>
     </StyledLogo>
   );
 }

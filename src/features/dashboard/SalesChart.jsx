@@ -45,8 +45,8 @@ function SalesChart({ bookings, numDays }) {
 
   const colors = isDarkMode
     ? {
-        totalSales: { stroke: "#4f46e5", fill: "#4f46e5" },
-        extrasSales: { stroke: "#22c55e", fill: "#22c55e" },
+        totalSales: { stroke: "#4742a6", fill: "#4742a6" },
+        extrasSales: { stroke: "#84cfa0", fill: "#84cfa0" },
         text: "#e5e7eb",
         background: "#18212f",
       }

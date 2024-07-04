@@ -4,7 +4,7 @@ const GlobalStyles = createGlobalStyle`
 :root {
   &, &.light-mode {
   /* Grey */
-  --color-grey-0: #fff;
+  --color-grey-0: #dbeadb;
   --color-grey-50: #f9fafb;
   --color-grey-100: #f3f4f6;
   --color-grey-200: #e5e7eb;
@@ -41,9 +41,9 @@ const GlobalStyles = createGlobalStyle`
     --image-grayscale: 0;
   --image-opacity: 100%;
   }
-  
+  //#301357
   &.dark-mode {
-    --color-grey-0: #18212f;
+    --color-grey-0: #282941;//#18212f;
 --color-grey-50: #111827;
 --color-grey-100: #1f2937;
 --color-grey-200: #374151;
@@ -84,9 +84,9 @@ const GlobalStyles = createGlobalStyle`
   --color-brand-50: #eef2ff;
   --color-brand-100: #e0e7ff;
   --color-brand-200: #c7d2fe;
-  --color-brand-500: #6366f1;
-  --color-brand-600: #4f46e5;
-  --color-brand-700: #4338ca;
+  --color-brand-500: #546d84;//#6366f1;
+  --color-brand-600: #7613c4;
+  --color-brand-700: #7613ba;
   --color-brand-800: #3730a3;
   --color-brand-900: #312e81;
   

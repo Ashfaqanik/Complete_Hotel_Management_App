@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { format, isToday } from "date-fns";
+import { MdOutlineBedroomParent } from "react-icons/md";
 import {
   HiOutlineChatBubbleBottomCenterText,
   HiOutlineCheckCircle,
   HiOutlineCurrencyDollar,
-  HiOutlineHomeModern,
 } from "react-icons/hi2";
 
 import DataItem from "../../ui/DataItem";
@@ -77,9 +77,9 @@ const Price = styled.div`
   margin-top: 2.4rem;
 
   background-color: ${(props) =>
-    props.isPaid ? "var(--color-green-100)" : "var(--color-yellow-100)"};
+    props.isPaid ? "var(--color-blue-100)" : "var(--color-grey-100)"};
   color: ${(props) =>
-    props.isPaid ? "var(--color-green-700)" : "var(--color-yellow-700)"};
+    props.isPaid ? "var(--color-blue-700)" : "var(--color-grey-700)"};
 
   & p:last-child {
     text-transform: uppercase;
@@ -123,9 +123,9 @@ function BookingDataBox({ booking }) {
     <StyledBookingDataBox>
       <Header>
         <div>
-          <HiOutlineHomeModern />
+          <MdOutlineBedroomParent />
           <p>
-            {numNights} nights in Cabin <span>{cabinName}</span>
+            {numNights} nights in Room <span>{cabinName}</span>
           </p>
         </div>
 
